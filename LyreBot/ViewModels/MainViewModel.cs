@@ -40,7 +40,6 @@ namespace LyreBot.ViewModels
         private bool _ignoreSliderChange;
 
         private System.Collections.Generic.IEnumerable<TrackChunk> midiTrackChunks;
-        private TrackChunk metaTrack;
         private TrackChunk firstTrack;
 
         private Timer playTimer;
@@ -407,7 +406,6 @@ namespace LyreBot.ViewModels
                 }
 
                 midiFile.Chunks.Clear();
-                midiFile.Chunks.Add(metaTrack);
 
                 foreach (MidiTrackModel trackModel in MidiTracks)
                 {
