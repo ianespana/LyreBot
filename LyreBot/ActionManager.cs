@@ -26,40 +26,40 @@ namespace LyreBot
         private static Dictionary<int, Keys> lyreNotes = new Dictionary<int, Keys>
         {
             { 48, Keys.Z }, // C3
-            //{ 49, Keys.D3 }, // C#3
+            { 49, Keys.None }, // C#3
             { 50, Keys.X }, // D3
-            //{ 51, Keys.D3 }, // D#3
+            { 51, Keys.None }, // D#3
             { 52, Keys.C }, // E3
             { 53, Keys.V }, // F3
-            //{ 54, Keys.D3 }, // F#3
+            { 54, Keys.None }, // F#3
             { 55, Keys.B }, // G3
-            //{ 56, Keys.D3 }, // G#3
+            { 56, Keys.None }, // G#3
             { 57, Keys.N }, // A3
-            //{ 58, Keys.D3 }, // A#3
+            { 58, Keys.None }, // A#3
             { 59, Keys.M }, // B3
             { 60, Keys.A }, // C4
-            //{ 61, Keys.D3 }, // C#4
+            { 61, Keys.None }, // C#4
             { 62, Keys.S }, // D4
-            //{ 63, Keys.D3 }, // D#4
+            { 63, Keys.None }, // D#4
             { 64, Keys.D }, // E4
             { 65, Keys.F }, // F4
-            //{ 66, Keys.D3 }, // F#4
+            { 66, Keys.None }, // F#4
             { 67, Keys.G }, // G4
-            //{ 68, Keys.D3 }, // G#4
+            { 68, Keys.None }, // G#4
             { 69, Keys.H }, // A4
-            //{ 70, Keys.D3 }, // A#4
+            { 70, Keys.None }, // A#4
             { 71, Keys.J }, // B4
             { 72, Keys.Q }, // C5
-            //{ 73, Keys.D3 }, // C#5
+            { 73, Keys.None }, // C#5
             { 74, Keys.W }, // D5
-            //{ 75, Keys.D3 }, // D#5
+            { 75, Keys.None }, // D#5
             { 76, Keys.E }, // E5
             { 77, Keys.R }, // F5
-            //{ 78, Keys.D3 }, // F#5
+            { 78, Keys.None }, // F#5
             { 79, Keys.T }, // G5
-            //{ 80, Keys.D3 }, // G#5
+            { 80, Keys.None }, // G#5
             { 81, Keys.Y }, // A5
-            //{ 82, Keys.D3 }, // A#5
+            { 82, Keys.None }, // A#5
             { 83, Keys.B }, // B5
         };
 

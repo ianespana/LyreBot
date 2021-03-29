@@ -39,18 +39,6 @@ namespace LyreBot.ViewModels
         private bool _playThroughSpeakers;
         private bool _ignoreSliderChange;
 
-        private string[] ScaleArray = {
-            "Chromatic",
-            "Hexatonic",
-            "Major",
-            "Minor",
-            "Hirajoshi",
-            "Phrygian",
-            "Yo",
-            "Pentatonic Minor",
-            "Pentatonic Major"
-        };
-
         private TrackChunk metaTrack;
         private TrackChunk firstTrack;
 
