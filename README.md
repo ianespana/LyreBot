@@ -1,4 +1,4 @@
-![LyreBot Logo](https://github.com/ianespana/LyreBot/blob/master/LyreBot/Resources/Lyre.png)
+![LyreBot Logo](./LyreBot/Resources/Lyre.png)
 
 LyreBot is a program which converts a MIDI input or file to a series of key presses for the Lyre. Any MIDI input works with this script (a MIDI keyboard, a virtual MIDI channel, etc), as well as [Standard MIDI Files (SMF)](https://www.midi.org/specifications/category/smf-specifications).
 
@@ -28,7 +28,7 @@ Using LyreBot is quite easy. As long as you don't separate any of it's component
 ## Usage
 Once the program is running you'll see the following window:
 
-![LyreBot Overview](https://github.com/ianespana/LyreBot/blob/master/LyreBot/Resources/Overview.png)
+![LyreBot Overview](./LyreBot/Resources/Overview.png)
 
 On the top left corner there's a button you can click to open and load MIDI files. Once a file is open, all you have to do is click play and tab back into game. LyreBot will not mess with your keyboard unless you're tabbed into Warframe!
 
