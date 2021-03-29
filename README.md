@@ -42,7 +42,6 @@ There are 2 settings you can change at this moment:
 
 # Special Thanks
 * [@lilggamegenius](https://github.com/lilggamegenius) - For helping with figuring out the key presses in game.
-* [/u/T2k5](https://www.reddit.com/user/T2k5/) - For making the original full keyboard script.
 
 # Notes
 * Nothing to see here (yet).
