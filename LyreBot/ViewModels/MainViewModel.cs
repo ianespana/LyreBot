@@ -39,6 +39,7 @@ namespace LyreBot.ViewModels
         private bool _playThroughSpeakers;
         private bool _ignoreSliderChange;
 
+        private System.Collections.Generic.IEnumerable<TrackChunk> midiTrackChunks;
         private TrackChunk metaTrack;
         private TrackChunk firstTrack;
 
@@ -350,15 +351,24 @@ namespace LyreBot.ViewModels
             MaximumTime = midiFileDuration.TotalSeconds;
             UpdateSlider(0);
             CurrentTime = "0:00";
-            metaTrack = midiFile.GetTrackChunks().FirstOrDefault();
-            midiFile.Chunks.Remove(metaTrack);
-            firstTrack = midiFile.GetTrackChunks().FirstOrDefault();
-            midiFile.Chunks.Remove(firstTrack);
-            MidiTracks.Add(new MidiTrackModel(firstTrack, true));
+            midiTrackChunks = midiFile.GetTrackChunks();
 
-            foreach (TrackChunk track in midiFile.GetTrackChunks())
+            if (midiTrackChunks.Count() > 1)
             {
-                MidiTracks.Add(new MidiTrackModel(track));
+                firstTrack = midiTrackChunks.FirstOrDefault();
+                midiFile.Chunks.Remove(firstTrack);
+                MidiTracks.Add(new MidiTrackModel(firstTrack, true));
+
+                foreach (TrackChunk track in midiFile.GetTrackChunks())
+                {
+                    MidiTracks.Add(new MidiTrackModel(track));
+                }
+            }
+            else
+            {
+                firstTrack = midiTrackChunks.FirstOrDefault();
+                midiFile.Chunks.Remove(firstTrack);
+                MidiTracks.Add(new MidiTrackModel(firstTrack, true));
             }
         }
 
