@@ -463,7 +463,7 @@ namespace LyreBot.ViewModels
 
         private void PlayTimerElapsed(object sender, ElapsedEventArgs e)
         {
-            if (ActionManager.IsWindowFocused("Warframe") || PlayThroughSpeakers)
+            if (ActionManager.IsWindowFocused("Genshin Impact") || PlayThroughSpeakers)
             {
                 playback.Start();
                 playTimer.Dispose();
@@ -498,11 +498,6 @@ namespace LyreBot.ViewModels
             SelectedMidiInput = MidiInputs[0];
         }
 
-        public void UpdateScale(int scaleIndex) 
-        {
-            Scale = "Scale: " + ScaleArray[scaleIndex];
-        }
-
         #endregion
 
         #region EventHandlers
@@ -530,9 +525,8 @@ namespace LyreBot.ViewModels
                     var note = e.Event as NoteOnEvent;
                     if (note != null && note.Velocity <= 0) return;
 
-                    //Check if the user has tabbed out of warframe, and stop playback to avoid Scale issues
+                    //Check if the user has tabbed out of genshin impact, and stop playback to avoid Scale issues
                     if (!(ActionManager.PlayNote(note, EnableVibrato, TransposeNotes) || PlayThroughSpeakers)) PlayPause();
-                    UpdateScale(ActionManager.activeScale);
                     return;
                 default:
                     return;

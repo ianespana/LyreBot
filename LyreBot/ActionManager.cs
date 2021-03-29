@@ -25,42 +25,42 @@ namespace LyreBot
         // Dictionary of note IDs and a series of ints. In order: Scale, Fret, Key, Vibrato
         private static Dictionary<int, Keys> lyreNotes = new Dictionary<int, Keys>
         {
-            { 48, Keys.D3 }, // C3
+            { 48, Keys.Z }, // C3
             //{ 49, Keys.D3 }, // C#3
-            { 50, Keys.D3 }, // D3
+            { 50, Keys.X }, // D3
             //{ 51, Keys.D3 }, // D#3
-            { 52, Keys.D3 }, // E3
-            { 53, Keys.D3 }, // F3
+            { 52, Keys.C }, // E3
+            { 53, Keys.V }, // F3
             //{ 54, Keys.D3 }, // F#3
-            { 55, Keys.D3 }, // G3
+            { 55, Keys.B }, // G3
             //{ 56, Keys.D3 }, // G#3
-            { 57, Keys.D3 }, // A3
+            { 57, Keys.N }, // A3
             //{ 58, Keys.D3 }, // A#3
-            { 59, Keys.D3 }, // B3
-            { 60, Keys.D3 }, // C4
+            { 59, Keys.M }, // B3
+            { 60, Keys.A }, // C4
             //{ 61, Keys.D3 }, // C#4
-            { 62, Keys.D3 }, // D4
+            { 62, Keys.S }, // D4
             //{ 63, Keys.D3 }, // D#4
-            { 64, Keys.D3 }, // E4
-            { 65, Keys.D3 }, // F4
+            { 64, Keys.D }, // E4
+            { 65, Keys.F }, // F4
             //{ 66, Keys.D3 }, // F#4
-            { 67, Keys.D3 }, // G4
+            { 67, Keys.G }, // G4
             //{ 68, Keys.D3 }, // G#4
-            { 69, Keys.D3 }, // A4
+            { 69, Keys.H }, // A4
             //{ 70, Keys.D3 }, // A#4
-            { 71, Keys.D3 }, // B4
-            { 72, Keys.D3 }, // C5
+            { 71, Keys.J }, // B4
+            { 72, Keys.Q }, // C5
             //{ 73, Keys.D3 }, // C#5
-            { 74, Keys.D3 }, // D5
+            { 74, Keys.W }, // D5
             //{ 75, Keys.D3 }, // D#5
-            { 76, Keys.D3 }, // E5
-            { 77, Keys.D3 }, // F5
-            { 78, Keys.D3 }, // F#5
-            { 79, Keys.D3 }, // G5
+            { 76, Keys.E }, // E5
+            { 77, Keys.R }, // F5
+            //{ 78, Keys.D3 }, // F#5
+            { 79, Keys.T }, // G5
             //{ 80, Keys.D3 }, // G#5
-            { 81, Keys.D3 }, // A5
+            { 81, Keys.Y }, // A5
             //{ 82, Keys.D3 }, // A#5
-            { 83, Keys.D3 }, // B5
+            { 83, Keys.B }, // B5
         };
 
         public static int activeScale = 0;
@@ -127,8 +127,6 @@ namespace LyreBot
         /// <param name="transposeNotes"> Should we transpose unplayable notes?.</param>
         public static bool PlayNote(NoteOnEvent note, bool enableVibrato, bool transposeNotes)
         {
-            //var hWnd = GetForegroundWindow();
-            //if (genshinWindow.Equals(IntPtr.Zero) || !hWnd.Equals(genshinWindow)) return false;
             if (!IsWindowFocused("Genshin Impact")) return false;
 
             var noteId = (int)note.NoteNumber;
