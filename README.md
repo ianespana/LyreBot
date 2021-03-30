@@ -34,7 +34,7 @@ On the top left corner there's a button you can click to open and load MIDI file
 
 To use an external MIDI device, all you have to do is select if from the dropdown menu and start playing. If you do not see your device, just click the reload button to the right of the dropdown.
 
-The program defaults to playing the first MIDI track found inside the file. If you want to play a different track or tracks, all you have to do is open the "MIDI Tracks" dropdown and select the tracks there. Simple.
+The program defaults to playing the first MIDI track found inside the file. If you want to play a different track or tracks, all you have to do is tick your desired track(s) in the "MIDI Tracks" section. Simple.
 
 There are 2 settings you can change at this moment:
 * Transpose notes - This setting will attempt to transpose notes that are unplayable. Default on.
