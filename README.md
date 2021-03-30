@@ -22,6 +22,10 @@ LyreBot does not in any way interfere with gameplay, nor does it inject new code
 
 LyreBot is built on the C# [DryWetMIDI midi library by melanchall](https://github.com/melanchall/drywetmidi). This library loads a MIDI file and plays it. Every note event is intercepted by LyreBot and depending on note's ID, a different combination of keys is pressed to play the sound. LyreBot also allows the usage of external MIDI devices (keyboard, synthesizers, etc).
 
+### Can it play any MIDI?
+
+While you can load any MIDI you want into the bot, you have to keep in mind that Genshin itself has some limits. For instance, you can only play notes between C3 and B5, and you can't play any half tones in that range. Keep this in mind when trying out MIDIs.
+
 # Getting Started
 Using LyreBot is quite easy. As long as you don't separate any of it's components, it can sit anywhere in your computer. No installation is required, all you need to do is double click LyreBot.exe and you'll be good to go!
 
