@@ -16,7 +16,7 @@ LyreBot is a third party software that can read MIDI files (.mid) and play their
 
 ### Is it safe?
 
-LyreBot does not in any way interfere with gameplay, nor does it inject new code or modify existing one. It also does not tamper with memory in any way, thus is can't be catalogued as a cheat and should be safe to use.
+LyreBot does not in any way interfere with gameplay, nor does it inject new code or modify existing one. It also does not tamper with memory in any way, thus is can't be catalogued as a cheat and should be safe to use. Then again, you must keep in mind **you're using this program at your own risk!**
 
 ### How does it work?
 
