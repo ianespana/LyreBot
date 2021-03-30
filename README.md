@@ -30,7 +30,7 @@ Once the program is running you'll see the following window:
 
 ![LyreBot Overview](./LyreBot/Resources/Overview.png)
 
-On the top left corner there's a button you can click to open and load MIDI files. Once a file is open, all you have to do is click play and tab back into game. LyreBot will not mess with your keyboard unless you're tabbed into Warframe!
+On the top left corner there's a button you can click to open and load MIDI files. Once a file is open, all you have to do is click play and tab back into game. LyreBot will not mess with your keyboard unless you're tabbed into Genshin!
 
 To use an external MIDI device, all you have to do is select if from the dropdown menu and start playing. If you do not see your device, just click the reload button to the right of the dropdown.
 
