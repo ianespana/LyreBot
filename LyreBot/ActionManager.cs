@@ -60,7 +60,7 @@ namespace LyreBot
             { 80, Keys.None }, // G#5
             { 81, Keys.Y }, // A5
             { 82, Keys.None }, // A#5
-            { 83, Keys.B }, // B5
+            { 83, Keys.U }, // B5
         };
 
         public static int activeScale = 0;
