@@ -16,11 +16,15 @@ LyreBot is a third party software that can read MIDI files (.mid) and play their
 
 ### Is it safe?
 
-LyreBot does not in any way interfere with gameplay, nor does it inject new code or modify existing one. It also does not tamper with memory in any way, thus is can't be catalogued as a cheat and should be safe to use.
+LyreBot does not in any way interfere with gameplay, nor does it inject new code or modify existing one. It also does not tamper with memory in any way, thus is can't be catalogued as a cheat and should be safe to use. Then again, you must keep in mind **you're using this program at your own risk!**
 
 ### How does it work?
 
 LyreBot is built on the C# [DryWetMIDI midi library by melanchall](https://github.com/melanchall/drywetmidi). This library loads a MIDI file and plays it. Every note event is intercepted by LyreBot and depending on note's ID, a different combination of keys is pressed to play the sound. LyreBot also allows the usage of external MIDI devices (keyboard, synthesizers, etc).
+
+### Can it play any MIDI?
+
+While you can load any MIDI you want into the bot, you have to keep in mind that Genshin itself has some limits. For instance, you can only play notes between C3 and B5, and you can't play any half tones in that range. Keep this in mind when trying out MIDIs.
 
 # Getting Started
 Using LyreBot is quite easy. As long as you don't separate any of it's components, it can sit anywhere in your computer. No installation is required, all you need to do is double click LyreBot.exe and you'll be good to go!
@@ -30,11 +34,11 @@ Once the program is running you'll see the following window:
 
 ![LyreBot Overview](./LyreBot/Resources/Overview.png)
 
-On the top left corner there's a button you can click to open and load MIDI files. Once a file is open, all you have to do is click play and tab back into game. LyreBot will not mess with your keyboard unless you're tabbed into Warframe!
+On the top left corner there's a button you can click to open and load MIDI files. Once a file is open, all you have to do is click play and tab back into game. LyreBot will not mess with your keyboard unless you're tabbed into Genshin!
 
 To use an external MIDI device, all you have to do is select if from the dropdown menu and start playing. If you do not see your device, just click the reload button to the right of the dropdown.
 
-The program defaults to playing the first MIDI track found inside the file. If you want to play a different track or tracks, all you have to do is open the "MIDI Tracks" dropdown and select the tracks there. Simple.
+The program defaults to playing the first MIDI track found inside the file. If you want to play a different track or tracks, all you have to do is tick your desired track(s) in the "MIDI Tracks" section. Simple.
 
 There are 2 settings you can change at this moment:
 * Transpose notes - This setting will attempt to transpose notes that are unplayable. Default on.
