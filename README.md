@@ -1,18 +1,31 @@
+<div align="center">
+<h1>LyreBot-Fork with Naraka Bladepoint support</h1>
+NarakaMidiBot is built on the C# [DryWetMIDI midi library by melanchall](https://github.com/melanchall/drywetmidi). This library loads a MIDI file and plays it. Every note event is intercepted by LyreBot and depending on note's ID, a different combination of keys is pressed to play the sound. LyreBot (NarakaMidiBot) also allows the usage of external MIDI devices (keyboard, synthesizers, etc).
+Originally, the "LyreBot" was designed for the game "Genshin Impact" to convert midi to keypresses and play the Lyre (a musical item within the game).
+But the principle of operation, as well as the keys responsible for the notes are exactly the same as in naraka bladepoint. <br><br>
+
+<h1> ! Important notes ! </h1>
+<b> I am not a programmer at all unfortunately (I have only a basic understanding of programming). All I like is playing games and making people happy with music. For example, in Warframe - there are restrictions, only you and 3 people can hear the music, the same goes for Genshin Impact. So, being able to play for a large number of people that are in the hub is really fascinating, so I decided to try to "modify" the code a bit so that I can use it in Naraka Bladepoint. But I have not found a ready-made solution on the Internet, so I had to make it myself and I'm posting it for public access, so that the music in the hub - never stopped. If you want to express your gratitude, the button is below. </b>
+<a href="https://www.donationalerts.com/r/thekirasabi"><img src="./LyreBot/Resources/Coffe.png" height="42"></a>
+
+> 💓
+</b> Please support the original [@ianespana](https://github.com/ianespana) - for making original [LyreBot](https://github.com/ianespana/LyreBot) and [ShawzinBot](https://github.com/ianespana/ShawzinBot). Without it, obviously this fork wouldn't have been possible.
+
 ![LyreBot Logo](./LyreBot/Resources/Lyre.png)
 
-LyreBot is a program which converts a MIDI input or file to a series of key presses for the Lyre. Any MIDI input works with this script (a MIDI keyboard, a virtual MIDI channel, etc), as well as [Standard MIDI Files (SMF)](https://www.midi.org/specifications/category/smf-specifications).
-
 # Virus Scan
-You can check the virus scan for the precompiled version [here](https://www.virustotal.com/gui/file/b18a24e35ace60aa3e805d11ff96e01a7bf750bb9de253dd0f7d825ccc18b7d0/detection).
+You can check the virus scan for the precompiled version [here](https://www.virustotal.com/gui/file/188f07521b4e82ffa1c2a9397745ca8d52486cba1220d987113980e450c269eb/detection).
 
 # Download
-You can always get the latest version of LyreBot [here](https://github.com/ianespana/LyreBot/releases/latest).
+You can always get the latest version of LyreBot [here](https://github.com/Kirasabi/NarakaMidiBot/releases).
 
 # About
 
-### What's the LyreBot?
+### What's the NarakaMidiBot?
 
-LyreBot is a third party software that can read MIDI files (.mid) and play their content in Genshin Impact. It simulates key presses, and that's how the Lyre is played.
+NarakaMidiBot is a third party software which converts a MIDI input or file (.mid) to simulate a series of key presses for the instruments to play their content in Naraka Bladepoint Hub.
+Any MIDI input works with this script (a MIDI keyboard, a virtual MIDI channel, etc), as well as [Standard MIDI Files (SMF)](https://www.midi.org/specifications/category/smf-specifications).   
+
 
 ### Is it safe?
 
@@ -20,21 +33,21 @@ LyreBot does not in any way interfere with gameplay, nor does it inject new code
 
 ### How does it work?
 
-LyreBot is built on the C# [DryWetMIDI midi library by melanchall](https://github.com/melanchall/drywetmidi). This library loads a MIDI file and plays it. Every note event is intercepted by LyreBot and depending on note's ID, a different combination of keys is pressed to play the sound. LyreBot also allows the usage of external MIDI devices (keyboard, synthesizers, etc).
+[![VIDEO EXAMPLE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
 
-### Can it play any MIDI?
+### Important things about midi
 
-While you can load any MIDI you want into the bot, you have to keep in mind that Genshin itself has some limits. For instance, you can only play notes between C3 and B5, and you can't play any half tones in that range. Keep this in mind when trying out MIDIs.
+While you can load any MIDI you want into the bot, you have to keep in mind that Naraka Bladepoint has some limits. For instance, you can only play notes between C3 and B5, and you can't play any half tones in that range. Keep this in mind when trying out MIDIs.
 
 # Getting Started
-Using LyreBot is quite easy. As long as you don't separate any of it's components, it can sit anywhere in your computer. No installation is required, all you need to do is double click LyreBot.exe and you'll be good to go!
+Using NarakaMidiBot is quite easy. As long as you don't separate any of it's components, it can sit anywhere in your computer. No installation is required, all you need to do is double click NarakaMidiBot.exe and you'll be good to go!
 
 ## Usage
 Once the program is running you'll see the following window:
 
-![LyreBot Overview](./LyreBot/Resources/Overview.png)
+![NarakaMidiBot Overview](./LyreBot/Resources/Overview.png)
 
-On the top left corner there's a button you can click to open and load MIDI files. Once a file is open, all you have to do is click play and tab back into game. LyreBot will not mess with your keyboard unless you're tabbed into Genshin!
+On the top left corner there's a button you can click to open and load MIDI files. Once a file is open, all you have to do is click play and tab back into game. NarakaMidiBot will not mess with your keyboard unless you're tabbed into Naraka Bladepoint!
 
 To use an external MIDI device, all you have to do is select if from the dropdown menu and start playing. If you do not see your device, just click the reload button to the right of the dropdown.
 
@@ -44,8 +57,5 @@ There are 2 settings you can change at this moment:
 * Transpose notes - This setting will attempt to transpose notes that are unplayable. Default on.
 * Speed - This will change the MIDI playback speed. Default 1x.
 
-# Special Thanks
-* [@lilggamegenius](https://github.com/lilggamegenius) - For helping with figuring out the key presses in game.
 
-# Notes
-* Nothing to see here (yet).
+
