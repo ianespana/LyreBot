@@ -35,7 +35,7 @@ Any MIDI input works with this script (a MIDI keyboard, a virtual MIDI channel, 
 LyreBot does not in any way interfere with gameplay, nor does it inject new code or modify existing one. It also does not tamper with memory in any way, thus is can't be catalogued as a cheat and should be safe to use. Then again, you must keep in mind **you're using this program at your own risk!**
 
 ### How does it work?
-
+[VIDEO EXAMPLE](https://img.youtube.com/vi/kCRRn58Oy-M/0.jpg)
 [![VIDEO EXAMPLE](https://img.youtube.com/vi/kCRRn58Oy-M/0.jpg)](https://www.youtube.com/watch?v=kCRRn58Oy-M)
 
 ### Important things about midi
