@@ -36,7 +36,7 @@ LyreBot does not in any way interfere with gameplay, nor does it inject new code
 
 ### How does it work?
 
-[![VIDEO EXAMPLE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+[![VIDEO EXAMPLE](https://img.youtube.com/vi/kCRRn58Oy-M/0.jpg)](https://www.youtube.com/watch?v=kCRRn58Oy-M)
 
 ### Important things about midi
 
