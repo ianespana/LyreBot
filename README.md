@@ -1,11 +1,14 @@
-<div align="center">
-<h1>LyreBot-Fork with Naraka Bladepoint support</h1>
+
+# LyreBot-Fork with Naraka Bladepoint support
 NarakaMidiBot is built on the C# [DryWetMIDI midi library by melanchall](https://github.com/melanchall/drywetmidi). This library loads a MIDI file and plays it. Every note event is intercepted by LyreBot and depending on note's ID, a different combination of keys is pressed to play the sound. LyreBot (NarakaMidiBot) also allows the usage of external MIDI devices (keyboard, synthesizers, etc).
 Originally, the "LyreBot" was designed for the game "Genshin Impact" to convert midi to keypresses and play the Lyre (a musical item within the game).
 But the principle of operation, as well as the keys responsible for the notes are exactly the same as in naraka bladepoint. <br><br>
 
-<h1> ! Important notes ! </h1>
-<b> I am not a programmer at all unfortunately (I have only a basic understanding of programming). All I like is playing games and making people happy with music. For example, in Warframe - there are restrictions, only you and 3 people can hear the music, the same goes for Genshin Impact. So, being able to play for a large number of people that are in the hub is really fascinating, so I decided to try to "modify" the code a bit so that I can use it in Naraka Bladepoint. But I have not found a ready-made solution on the Internet, so I had to make it myself and I'm posting it for public access, so that the music in the hub - never stopped. If you want to express your gratitude, the button is below. </b>
+# ! Important notes !
+I am not a programmer at all unfortunately (I have only a basic understanding of programming).
+All I like is playing games and making people happy with music. For example, in Warframe - there are restrictions, only you and 3 people can hear the music, the same goes for Genshin Impact.
+So, being able to play for a large number of people that are in the hub is really fascinating, so I decided to try to "modify" the code a bit so that I can use it in Naraka Bladepoint. But I have not found a ready-made solution on the Internet, so I had to make it myself and I'm posting it for public access, so that the music in the hub - never stopped. If you want to express your gratitude, the button is below.
+
 <a href="https://www.donationalerts.com/r/thekirasabi"><img src="./LyreBot/Resources/Coffe.png" height="42"></a>
 
 > 💓
