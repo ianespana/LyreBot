@@ -1,8 +1,8 @@
 ﻿using System.Windows;
 using Caliburn.Micro;
-using LyreBot.ViewModels;
+using NarakaMidiBot.ViewModels;
 
-namespace LyreBot
+namespace NarakaMidiBot
 {
     public class Bootstrapper : BootstrapperBase
     {

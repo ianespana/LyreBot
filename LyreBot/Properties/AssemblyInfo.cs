@@ -6,11 +6,11 @@ using System.Windows;
 // La información general de un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
 // asociada con un ensamblado.
-[assembly: AssemblyTitle("LyreBot")]
-[assembly: AssemblyDescription("A program to convert MIDI inputs and files into Lyre keys")]
+[assembly: AssemblyTitle("NarakaMidiBot")]
+[assembly: AssemblyDescription("A program to convert MIDI inputs and files into Naraka Bladepoint keys")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Heracles421")]
-[assembly: AssemblyProduct("LyreBot")]
+[assembly: AssemblyProduct("NarakaMidiBot")]
 [assembly: AssemblyCopyright("Copyright © Heracles421 2019-2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

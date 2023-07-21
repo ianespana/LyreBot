@@ -3,7 +3,7 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using Melanchall.DryWetMidi.Devices;
 
-namespace LyreBot.Views
+namespace NarakaMidiBot.Views
 {
     /// <summary>
     /// Lógica de interacción para MainView.xaml
