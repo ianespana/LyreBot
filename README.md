@@ -20,7 +20,7 @@ So, being able to play for a large number of people that are in the hub is reall
 You can check the virus scan for the precompiled version [here](https://www.virustotal.com/gui/file/188f07521b4e82ffa1c2a9397745ca8d52486cba1220d987113980e450c269eb/detection).
 
 # Download
-You can always get the latest version of LyreBot [here](https://github.com/Kirasabi/NarakaMidiBot/releases).
+You can always get the latest version of NarakaMidiBot [here](https://github.com/Kirasabi/NarakaMidiBot/releases).
 
 # About
 
