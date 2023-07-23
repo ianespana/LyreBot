@@ -42,6 +42,8 @@ LyreBot does not in any way interfere with gameplay, nor does it inject new code
 
 While you can load any MIDI you want into the bot, you have to keep in mind that Naraka Bladepoint has some limits. For instance, you can only play notes between C3 and B5, and you can't play any half tones in that range. Keep this in mind when trying out MIDIs.
 
+![IMPORTANT about keyboard layout](./LyreBot/Resources/chrome_dZrfTIVH5I.png)
+
 # Getting Started
 Using Naraka Midi Bot is quite easy. As long as you don't separate any of it's components, it can sit anywhere in your computer. No installation is required, all you need to do is double click Naraka Midi Bot.exe and you'll be good to go!
 
