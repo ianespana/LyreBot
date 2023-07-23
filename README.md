@@ -1,6 +1,6 @@
 
 # LyreBot-Fork with Naraka Bladepoint support
-NarakaMidiBot is built on the C# [DryWetMIDI midi library by melanchall](https://github.com/melanchall/drywetmidi). This library loads a MIDI file and plays it. Every note event is intercepted by NarakaMidiBot and depending on note's ID, a different combination of keys is pressed to play the sound. LyreBot (NarakaMidiBot) also allows the usage of external MIDI devices (keyboard, synthesizers, etc).
+Naraka Midi Bot is built on the C# [DryWetMIDI midi library by melanchall](https://github.com/melanchall/drywetmidi). This library loads a MIDI file and plays it. Every note event is intercepted by Naraka Midi Bot and depending on note's ID, a different combination of keys is pressed to play the sound. LyreBot (Naraka Midi Bot) also allows the usage of external MIDI devices (keyboard, synthesizers, etc).
 Originally, the "LyreBot" was designed for the game "Genshin Impact" to convert midi to keypresses and play the Lyre (a musical item within the game).
 But the principle of operation, as well as the keys responsible for the notes are exactly the same as in naraka bladepoint. <br><br>
 
@@ -20,13 +20,13 @@ So, being able to play for a large number of people that are in the hub is reall
 You can check the virus scan for the precompiled version [here](https://www.virustotal.com/gui/file/188f07521b4e82ffa1c2a9397745ca8d52486cba1220d987113980e450c269eb/detection).
 
 # Download
-You can always get the latest version of NarakaMidiBot [here](https://github.com/Kirasabi/NarakaMidiBot/releases).
+You can always get the latest version of Naraka Midi Bot [here](https://github.com/Kirasabi/Naraka Midi Bot/releases).
 
 # About
 
-### What's the NarakaMidiBot?
+### What's the Naraka Midi Bot?
 
-NarakaMidiBot is a third party software which converts a MIDI input or file (.mid) to simulate a series of key presses for the instruments to play their content in Naraka Bladepoint Hub.
+Naraka Midi Bot is a third party software which converts a MIDI input or file (.mid) to simulate a series of key presses for the instruments to play their content in Naraka Bladepoint Hub.
 Any MIDI input works with this script (a MIDI keyboard, a virtual MIDI channel, etc), as well as [Standard MIDI Files (SMF)](https://www.midi.org/specifications/category/smf-specifications).   
 
 
@@ -43,14 +43,14 @@ LyreBot does not in any way interfere with gameplay, nor does it inject new code
 While you can load any MIDI you want into the bot, you have to keep in mind that Naraka Bladepoint has some limits. For instance, you can only play notes between C3 and B5, and you can't play any half tones in that range. Keep this in mind when trying out MIDIs.
 
 # Getting Started
-Using NarakaMidiBot is quite easy. As long as you don't separate any of it's components, it can sit anywhere in your computer. No installation is required, all you need to do is double click NarakaMidiBot.exe and you'll be good to go!
+Using Naraka Midi Bot is quite easy. As long as you don't separate any of it's components, it can sit anywhere in your computer. No installation is required, all you need to do is double click Naraka Midi Bot.exe and you'll be good to go!
 
 ## Usage
 Once the program is running you'll see the following window:
 
-![NarakaMidiBot Overview](./LyreBot/Resources/Overview.png)
+![Naraka Midi Bot Overview](./LyreBot/Resources/Overview.png)
 
-On the top left corner there's a button you can click to open and load MIDI files. Once a file is open, all you have to do is click play and tab back into game. NarakaMidiBot will not mess with your keyboard unless you're tabbed into Naraka Bladepoint!
+On the top left corner there's a button you can click to open and load MIDI files. Once a file is open, all you have to do is click play and tab back into game. Naraka Midi Bot will not mess with your keyboard unless you're tabbed into Naraka Bladepoint!
 
 To use an external MIDI device, all you have to do is select if from the dropdown menu and start playing. If you do not see your device, just click the reload button to the right of the dropdown.
 
