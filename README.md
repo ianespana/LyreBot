@@ -21,6 +21,7 @@ You can check the virus scan for the precompiled version [here](https://www.viru
 
 # Download
 You can always get the latest version of Naraka Midi Bot [here](https://github.com/Kirasabi/Naraka-Midi-Bot/releases).
+And also, if u want to download or upload good-quality midi songs, that transposed to work correctly, u can join [The Meadhouse discord server](https://github.com/Kirasabi/Naraka-Midi-Bot/releases).
 
 # About
 
