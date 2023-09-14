@@ -9,12 +9,12 @@ using Melanchall.DryWetMidi.Core;
 using Melanchall.DryWetMidi.Devices;
 using Melanchall.DryWetMidi.Interaction;
 using Microsoft.Win32;
-using LyreBot.Models;
+using NarakaMidiBot.Models;
 using InputDevice = Melanchall.DryWetMidi.Devices.InputDevice;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
 
-namespace LyreBot.ViewModels
+namespace NarakaMidiBot.ViewModels
 {
     public class MainViewModel : Screen
     {
@@ -80,7 +80,7 @@ namespace LyreBot.ViewModels
                     GitVersion p = serializer.Deserialize<GitVersion>(reader);
                     if (!(p.draft || p.prerelease) && p.tag_name != _programVersion.ToString())
                     {
-                        VersionString = _programVersion.ToString() + " - Update available!";
+                        VersionString = _programVersion.ToString() + " - LyreBot for Genshin Update available!";
                     }
                 }
             }
@@ -459,7 +459,7 @@ namespace LyreBot.ViewModels
 
         private void PlayTimerElapsed(object sender, ElapsedEventArgs e)
         {
-            if (ActionManager.IsWindowFocused("Genshin Impact") || PlayThroughSpeakers)
+            if (ActionManager.IsWindowFocused("Naraka") || PlayThroughSpeakers)
             {
                 playback.Start();
                 playTimer.Dispose();
@@ -521,7 +521,7 @@ namespace LyreBot.ViewModels
                     var note = e.Event as NoteOnEvent;
                     if (note != null && note.Velocity <= 0) return;
 
-                    //Check if the user has tabbed out of genshin impact, and stop playback to avoid Scale issues
+                    //Check if the user has tabbed out of Naraka Bladepoint, and stop playback to avoid Scale issues
                     if (!(ActionManager.PlayNote(note, EnableVibrato, TransposeNotes) || PlayThroughSpeakers)) PlayPause();
                     return;
                 default:

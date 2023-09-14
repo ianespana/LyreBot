@@ -1,4 +1,4 @@
-﻿namespace LyreBot.Models
+﻿namespace NarakaMidiBot.Models
 {
     public class MidiInputModel
     {

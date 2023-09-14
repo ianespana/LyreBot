@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace LyreBot
+namespace NarakaMidiBot
 {
     /// <summary>
     /// Lógica de interacción para App.xaml

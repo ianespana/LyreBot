@@ -8,11 +8,11 @@ using System.Windows.Forms;
 using System.Windows.Shapes;
 using Melanchall.DryWetMidi;
 using Melanchall.DryWetMidi.Core;
-using LyreBot.ViewModels;
+using NarakaMidiBot.ViewModels;
 using Keyboard = InputManager.Keyboard;
 using Timer = System.Threading.Timer;
 
-namespace LyreBot
+namespace NarakaMidiBot
 {
     public class ActionManager
     {
@@ -20,10 +20,10 @@ namespace LyreBot
         public const uint WM_KEYUP = 0x0101;
         public const uint WM_SETTEXT = 0x000C;
 
-        private static IntPtr genshinWindow = IntPtr.Zero;
+        private static IntPtr narakaWindow = IntPtr.Zero;
 
         // Dictionary of note IDs and a series of ints. In order: Scale, Fret, Key, Vibrato
-        private static Dictionary<int, Keys> lyreNotes = new Dictionary<int, Keys>
+        private static Dictionary<int, Keys> narakaNotes = new Dictionary<int, Keys>
         {
             { 48, Keys.Z }, // C3
             { 49, Keys.None }, // C#3
@@ -120,27 +120,27 @@ namespace LyreBot
         static extern void SwitchToThisWindow(IntPtr hWnd, bool fUnknown);
 
         /// <summary>
-        /// Play a MIDI note inside Genshin Impact.
+        /// Play a MIDI note inside Naraka Bladepoint.
         /// </summary>
         /// <param name="note"> The note to be played.</param>
         /// <param name="enableVibrato"> Should we use vibrato to play unplayable notes?.</param>
         /// <param name="transposeNotes"> Should we transpose unplayable notes?.</param>
         public static bool PlayNote(NoteOnEvent note, bool enableVibrato, bool transposeNotes)
         {
-            if (!IsWindowFocused("Genshin Impact")) return false;
+            if (!IsWindowFocused("Naraka")) return false;
 
             var noteId = (int)note.NoteNumber;
-            if (!lyreNotes.ContainsKey(noteId))
+            if (!narakaNotes.ContainsKey(noteId))
             {
                 if (transposeNotes)
                 {
-                    if (noteId < lyreNotes.Keys.First())
+                    if (noteId < narakaNotes.Keys.First())
                     {
-                        noteId = lyreNotes.Keys.First() + noteId % 12;
+                        noteId = narakaNotes.Keys.First() + noteId % 12;
                     }
-                    else if (noteId > lyreNotes.Keys.Last())
+                    else if (noteId > narakaNotes.Keys.Last())
                     {
-                        noteId = lyreNotes.Keys.Last() - 15 + noteId % 12;
+                        noteId = narakaNotes.Keys.Last() - 15 + noteId % 12;
                     }
                 }
                 else
@@ -154,16 +154,16 @@ namespace LyreBot
         }
 
         /// <summary>
-        /// Play a MIDI note inside Genshin Impact.
+        /// Play a MIDI note inside Naraka Bladepoint.
         /// </summary>
         /// <param name="noteId"> The MIDI ID of the note to be played.</param>
         /// <param name="enableVibrato"> Should we use vibrato to play unplayable notes?.</param>
         /// <param name="transposeNotes"> Should we transpose unplayable notes?.</param>
         public static void PlayNote(int noteId, bool enableVibrato, bool transposeNotes)
         {
-            var lyreNote = lyreNotes[noteId];
+            var narakaNote = narakaNotes[noteId];
 
-            KeyTap(lyreNote);
+            KeyTap(narakaNote);
         }
 
         /// <summary>
@@ -189,11 +189,11 @@ namespace LyreBot
 
         public static bool OnSongPlay()
         {
-            genshinWindow = FindWindow("Genshin Impact");
-            //BringWindowToFront(genshinWindow);
-            SwitchToThisWindow(genshinWindow, true);
+            narakaWindow = FindWindow("Naraka");
+            //BringWindowToFront(narakaWindow);
+            SwitchToThisWindow(narakaWindow, true);
             var hWnd = GetForegroundWindow();
-            if (genshinWindow.Equals(IntPtr.Zero) || !hWnd.Equals(genshinWindow)) return false;
+            if (narakaWindow.Equals(IntPtr.Zero) || !hWnd.Equals(narakaWindow)) return false;
             return true;
         }
 

@@ -1,7 +1,7 @@
 ﻿using Melanchall.DryWetMidi.Core;
 using System.Linq;
 
-namespace LyreBot.Models
+namespace NarakaMidiBot.Models
 {
     public class GitVersion
     {
